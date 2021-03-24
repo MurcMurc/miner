@@ -22,8 +22,6 @@ profiles:
           size: 5Gi
   placement:
     westcoast:
-      attributes:
-        host: akash
       pricing:
         web: 
           denom: uakt
