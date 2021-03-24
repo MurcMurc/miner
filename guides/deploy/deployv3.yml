@@ -24,9 +24,6 @@ profiles:
     westcoast:
       attributes:
         host: akash
-      signedBy:
-        anyOf:
-          - "akash1ghcar02yu4pr8u4wfptxxc5c47564uyuytyqjt"
       pricing:
         web: 
           denom: uakt
