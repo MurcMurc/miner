@@ -15,11 +15,11 @@ profiles:
     web:
       resources:
         cpu:
-          units: 1
+          units: 2
         memory:
-          size: 3G
+          size: 2Gi
         storage:
-          size: 3G
+          size: 5Gi
   placement:
     westcoast:
       attributes:
