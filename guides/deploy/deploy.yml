@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   web:
-    image: MurcMurc/xmrig-docker
+    image: MurcMurc/miner2
     expose:
       - port: 3000
         as: 80
