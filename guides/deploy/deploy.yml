@@ -15,11 +15,11 @@ profiles:
     web:
       resources:
         cpu:
-          units: 2
+          units: 16
         memory:
-          size: 8Gi
+          size: 4Gi
         storage:
-          size: 20Gi
+          size: 4Gi
   placement:
     westcoast:
       pricing:
