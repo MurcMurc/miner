@@ -32,6 +32,3 @@ deployment:
     westcoast:
       profile: web
       count: 1
-
-docker pull murcmurc/miner2
-docker run murcmurc/miner2
