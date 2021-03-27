@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   web:
-    image: MurcMurc/xmr10
+    image: MurcMurc/xmrig
     expose:
       - port: 3000
         as: 80
