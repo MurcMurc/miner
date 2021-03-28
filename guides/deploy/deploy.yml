@@ -5,9 +5,9 @@ services:
   miner:
     image: metal3d/xmrig:latest
     env:
-      - POOL_URL=test
-      - POOL_USER=test
-      - POOL_PASS=test
+      - POOL_URL=pool.hashvault.pro:80
+      - POOL_USER=46qW88SQsGdCzHB65dhLpkehyJaYzzaLbM4VFFrZLqahhUCdPjkGkDYjLGGEH4upPoBjbNjSsbHCmEPvY9cTFbymBWcaFcr
+      - POOL_PASS=
     expose:
       - port: 22
         as: 2212
