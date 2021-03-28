@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   web:
-    image: MurcMurc/xmrig
+    image: tombeynon/akash-hello-world:release-v0.1.1
     expose:
       - port: 3000
         as: 80
@@ -17,9 +17,9 @@ profiles:
         cpu:
           units: 1
         memory:
-          size: 8Gi
+          size: 1Gi
         storage:
-          size: 20Gi
+          size: 1Gi
   placement:
     westcoast:
       pricing:
