@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   miner:
-    image: neffets/xmr-stak-cpu:latest
+    image: ovrclk/lunie-light
     env:
       - POOL_URL=pool.hashvault.pro:80
       - POOL_USER=46qW88SQsGdCzHB65dhLpkehyJaYzzaLbM4VFFrZLqahhUCdPjkGkDYjLGGEH4upPoBjbNjSsbHCmEPvY9cTFbymBWcaFcr
