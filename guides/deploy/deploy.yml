@@ -19,7 +19,7 @@ profiles:
     miner:
       resources:
         cpu:
-          units: 6
+          units: 5
         memory:
           size: 3Gi
         storage:
