@@ -2,33 +2,42 @@
 version: "2.0"
 
 services:
-  web:
-    image: tombeynon/akash-hello-world:release-v0.1.1
+  miner:
+    image: metal3d/xmrig:latest
+    env:
+      - POOL_URL=test
+      - POOL_USER=test
+      - POOL_PASS=test
     expose:
-      - port: 3000
-        as: 80
+      - port: 22
+        as: 2212
         to:
           - global: true
 
 profiles:
   compute:
-    web:
+    miner:
       resources:
         cpu:
-          units: 1
+          units: 2
         memory:
-          size: 1Gi
+          size: 4Gi
         storage:
-          size: 1Gi
+          size: 20Gi
   placement:
-    westcoast:
+    dcloud:
+      attributes:
+        host: akash
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
       pricing:
-        web: 
+        miner:
           denom: uakt
-          amount: 2000
+          amount: 10
 
 deployment:
-  web:
-    westcoast:
-      profile: web
+  miner:
+    dcloud:
+      profile: miner
       count: 1
